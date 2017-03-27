@@ -5,6 +5,7 @@ Kivy Imports
 '''
 from kivy.config                import Config
 Config.set('input', 'mouse', 'mouse,disable_multitouch')
+Config.set('graphics', 'multisamples', '0') #added to solve OpenGL 2 bug
 from kivy.app                   import App
 from kivy.uix.gridlayout        import GridLayout
 from kivy.uix.floatlayout       import FloatLayout
